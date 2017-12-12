@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.tomtom.canteen_mama_404.PaymentActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/merchant_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="40dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="118dp"
+            android:text="Merchant ID" />
+
+        <TextView
+            android:id="@+id/merchant_id_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/merchant_textView"
+            android:layout_marginLeft="85dp"
+            android:layout_marginStart="85dp"
+            android:layout_toEndOf="@+id/merchant_textView"
+            android:layout_toRightOf="@+id/merchant_textView"
+            android:text="0" />
+
+        <TextView
+            android:id="@+id/pay_amount_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/merchant_textView"
+            android:layout_alignStart="@+id/merchant_textView"
+            android:layout_below="@+id/merchant_textView"
+            android:layout_marginTop="71dp"
+            android:text="Amount" />
+
+        <EditText
+            android:id="@+id/pay_amount_editText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/merchant_id_textView"
+            android:layout_marginEnd="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginTop="58dp"
+            android:ems="10"
+            android:hint="amount"
+            android:inputType="numberDecimal" />
+
+        <Button
+            android:id="@+id/payment_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/pay_amount_editText"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="77dp"
+            android:text="Pay Amount" />
+
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>
